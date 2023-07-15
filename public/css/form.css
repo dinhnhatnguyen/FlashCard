@@ -1,0 +1,43 @@
+:root {
+    --whishBone: #ede9e3;
+    --pieCrust: #e7d7c9;
+    --applePie: #d4b2a7;
+    --fineChina: #cdc6c3;
+    --gravy: #a38f85;
+}
+main{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    max-width: 95%;
+    margin: 1rem;
+    border-radius: 30px;
+    height: 30rem;
+    max-width: 95%;
+    background-color: var(--pieCrust)  ;
+}
+.form-control {
+    margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.form-control input,
+.form-control textarea {
+    border: 1px solid var(--gravy);
+    font: inherit;
+    border-radius: 2px;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+    outline-color: var(--gravy);
+}

@@ -18,7 +18,7 @@
                         <div class="card__image">
                             <!-- <img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" alt=""> -->
                             <!-- <%= flashCard.imgURL %> -->
-                            <img src="<%=flashCard.imgUrl%>" alt="">
+                            <img src="<%= flashCard.imgURL %>" alt="<%= flashCard.title %>">
                         </div>
                         <div class="card__content">
                             <h2 class="flashCard__means">
@@ -32,7 +32,7 @@
                 <% } %>
             </div>
         <% } else { %>
-            <h1>No FlashCard Found!</h1>
+            <h1>No Flash Card Found!</h1>
         <% } %>
     </main>
 <%- include('includes/end.ejs') %>

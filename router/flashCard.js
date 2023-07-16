@@ -12,9 +12,9 @@ router.get('/add-flashCard', (req, res, next) =>{
 
 router.post('/add-flashCard', (req, res, next) =>{
 
-    res.push({
+    flashCards.push({
         title: req.body.title,
-        imgURL: req.body.imgURL,
+        imgURL: req.body.imageUrl,
         means: req.body.means,
         description: req.body.description
     })

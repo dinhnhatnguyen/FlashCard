@@ -26,6 +26,7 @@ module.exports = class Product {
   }
 
   save() {
+    this.id = Math.random().toString();
     getProductsFromFile(flashCards => {
       flashCards.push(this);
       fs.writeFile(p, JSON.stringify(flashCards), err => {
